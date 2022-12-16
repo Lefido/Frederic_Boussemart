@@ -1,0 +1,737 @@
+
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+text-decoration: none;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+
+
+$color-bg-violet: rgba(177, 47, 173, 0.904);
+$color-grey: rbg(231,230,230);
+$color-fond-box : rgba(255, 255, 255, 0.822);
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+   
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+    color: white;
+    background: url(./assets/bg.jpg) fixed center/cover;
+    font-family: 'Rajdhani', sans-serif;
+    background-color:  black;
+}
+
+.retrait {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    width: 70%;
+    padding: 5px 10px;
+    transform: translate(-50%, -50%);
+    background-color: gray;
+    border-radius: 5px 5px 5px 5px;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+
+}
+
+
+
+.front-page {
+    background-color: $color-bg-violet;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 50%;
+    width: 50px;
+    height: 50px;
+    display: none;
+   transform: translate(+50%);
+   box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.548);
+
+    img {
+        width: 100%;
+    }
+}
+
+.logo-twitter {
+    position: fixed;
+    right: 5%;
+    top: 45%;
+    z-index: 1;
+    transition: 0.3s;
+    img {
+        width: 40px;
+    }
+}
+
+.logo-linkedin {
+    position: fixed;
+    right: 5%;
+    top: 52%;
+    z-index: 1;
+    transition: 0.3s;
+    img {
+        width: 40px;
+    }
+}
+
+.zoom-reseau:hover {
+    transform: scale(1.2);
+   
+}
+
+.scroll {
+    display: block;
+    z-index: 1;
+}
+
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-bg-violet;
+    padding: 10px 30px;
+    border-radius: 0 0 10px 10px;
+    height: 100px;
+    position: sticky;
+    top : 0;
+    z-index: 1;
+   
+}
+
+.titre-page {
+    width: 80;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 40px;
+
+}
+
+.titre-page h1 {
+    font-size: 80px;
+    border-bottom: 1px solid white;
+}
+
+.titre-page h2 {
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+
+.titre-site {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+
+.photo {
+    margin-right: 10px;
+    display: none;
+    
+}
+
+.photo img {
+    width: 80px;
+    border-radius: 35px;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.63);
+}
+
+.nom {
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+    p {
+        color: white;
+    }
+
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.links a {
+    padding: 0 10px;
+    color: white;
+}
+
+.reseau {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 40px;
+}
+
+.reseau a {
+    padding: 0 5px;
+    color: white;
+    margin-right: 5px;
+}
+
+
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.section {
+    width: 100%;
+        margin-bottom: 5px;
+        margin: 10px 0 10px;
+        border-bottom: 1px solid white;
+        text-transform: uppercase;
+        text-align: center;
+       
+}
+
+.titre {
+    width: 100%;
+    margin: 10px auto 40px;
+    text-align: center;
+    border-bottom: 1px solid white;
+    text-shadow: 1px 1px 1px black;
+    font-size: 80px;
+    text-transform: uppercase;
+}
+
+.titre2 {
+    width: 100%;
+    margin: 40px auto;
+    text-align: center;
+    border-bottom: 1px solid white;
+    text-shadow: 1px 1px 1px black;
+    font-size: 80px;
+    text-transform: uppercase;
+}
+
+.monprofil {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    height: 30vh;
+    margin: 80px auto;
+    text-shadow: 1px 1px 1px black;
+
+}
+
+.image-t {
+
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 5px;
+
+    img {
+        width: 70%;
+        
+    }
+
+}
+
+// .contact img {
+//     height: 25px;
+    
+// }
+
+.img-contact {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+
+
+}
+
+
+// .contact-lg img{
+//     width: 35px;
+//     height: 35px;
+// }
+
+// .maphoto {
+//     min-width: 25%;
+//     background: url("./assets/profil2.png") 50% 20%/50% no-repeat;
+//     background-color: black;
+//     display: flex;
+//     flex-wrap: wrap;
+    
+// }
+
+.maphoto img {
+    width: 200px;
+    border-radius: 25px;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.623);
+    transition: 0.4s;
+}
+
+.maphoto img:hover {
+    transform: scale(1.2);
+    
+}
+
+.presentation {
+    width: 50%;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+.presentation p {
+    padding: 10px;
+    transition: 0.4s;
+}
+
+.presentation p:hover {
+    transform: scale(1.08);
+    
+}
+
+.contact {
+
+    min-width: 25%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    
+    // Modification
+    justify-content: space-between;
+    justify-content:flex-start;
+
+}
+
+.contact-lg {
+    padding: 5px;
+    transition: 0.4s;
+    margin-bottom: 20px;
+}
+
+.contact-lg:hover {
+    transform: scale(1.08);
+}
+
+
+.moncv {
+    width: 200px;
+    background-color: black;
+    margin: 20px auto 10px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.164);
+    transition: 0.3s;
+    a {
+        color: white;
+       
+    }
+}
+
+.moncv:hover {
+    background-color: rgb(46, 46, 46);
+    transform: scale(1.08);
+
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.container-competences {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.competences {
+    width: 48%;
+    background-color: $color-fond-box;
+    color: black;
+    margin-bottom: 35px;
+    padding: 10px;
+    border-radius: 10px;
+
+    h2 {
+        border-bottom: 1px solid black;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    
+}
+
+
+.competence {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.competence h3 {
+    width: 50%;
+    padding: 10px 0;
+    
+}
+
+.mypropos {
+    width: 100%;
+    color: black;
+    background-color: $color-fond-box;
+    margin-bottom: 35px;
+    padding: 20px;
+    border-radius: 15px;
+
+    h3 {
+        margin-top: 15px;
+    }
+
+    p {
+        margin: 5px 0 5px;
+    }
+
+   
+    
+
+}
+
+
+.mypropos p {
+    font-size: 20px;
+}
+
+span {
+    color: black;
+}
+
+
+.programmation img {
+    width: 180px;
+    background-color: $color-fond-box;
+    border-radius: 10px;
+}
+
+.programmation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+
+#competences,
+#experiences,
+#programmation
+ {
+    scroll-margin: 130px;
+}
+
+
+@media screen and (max-width : 1410px) {
+
+.monprofil {
+    height: auto;
+    margin-top: 30px;
+}
+
+.contact {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.presentation {
+    width: 100%;
+}
+
+.maphoto {
+    display: none;
+}
+
+.photo {
+    display: block;
+}
+
+#competences,
+#experiences,
+#programmation
+ {
+    scroll-margin: 130px;
+}
+
+
+}
+
+
+// @media screen and (max-width : 1000px) {
+
+//     .titre-page h1 {
+//         font-size: 60px;
+//         border-bottom: 1px solid white;
+//     }
+
+//     .contact {
+//         flex-direction: column;
+//         width: auto;
+//         margin: 0 auto;
+//     }
+
+//     .monprofil {
+//         margin-bottom: 20px;
+//     }
+
+//     .contact {
+//         width: 90%;
+//         display: flex;
+//         flex-wrap: wrap;
+//         flex-direction:row;
+         
+//     }
+
+//     .contact-lg {
+//         width: 50%;
+//         padding: 5px;
+
+//     }
+
+//     .img-contact {
+//         margin-bottom: 10px;
+//     }
+
+//     #competences,
+// #experiences,
+// #programmation
+//  {
+//     scroll-margin: 120px;
+// }
+
+
+// }
+
+@media screen and (max-width : 1064px) {
+    .competences {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    #competences,
+#experiences,
+#programmation
+ {
+    scroll-margin: 150px;
+}
+
+.retrait {
+    position:relative;
+    transform: translate(0,0);
+    left: auto;
+    width: auto;
+
+}
+
+.contact {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    margin: auto;
+
+}
+.contact-lg {
+    width: 50%;
+    padding: 5px;
+    justify-content: center;
+}
+
+
+}
+
+@media screen and (max-width : 820px) {
+
+nav {
+    height: 135px;
+    position: sticky;
+    top: -92px;
+
+}
+
+.titre-site {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.titre {
+    font-size: 50px;
+}
+
+.links {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+
+#competences,
+#experiences,
+#programmation
+ {
+    scroll-margin: 58px;
+}
+
+
+
+}
+
+@media screen and (max-width : 720px) {
+
+
+    nav {
+        border-radius: 0;
+    }
+
+    .links a {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    body {
+        width: 100%;
+    }
+
+   .contact p {
+        font-size: 14px;
+   } 
+
+    .titre-page h1 {
+        font-size: 40px;
+        border-bottom: 1px solid white;
+    }
+    
+    .titre-page h2 {
+        font-size: 25px;
+        margin-top: 15px;
+    }
+
+    .monprofil {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 0;
+        
+    }
+
+    .logo a {
+        display: none;
+        transition: 0.2s;
+    }
+
+    .logo img {
+        margin-left: 10px;
+    }
+
+    .competences img {
+        width: 250px;
+        width: 100%;
+    }
+
+    .competences {
+        border-radius: 0;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .titre {
+        font-size: 35px;
+        margin: 5px 0 15px;
+    }
+
+    .mypropos {
+        border-radius: 0;
+        margin-bottom: 15px;
+    }
+
+    #competences,
+    #experiences,
+    #programmation {
+    scroll-margin: 58px;
+    }
+
+
+
+
+}
+
+@media screen and (max-width : 450px) {
+
+.image-t {
+
+    width: 20px;
+    height: 20px;
+    }
+
+.contact {
+        width: 100%;
+    }
+
+.nom {
+    h2 {
+        font-size: 22px;
+    }
+}
+
+#competences,
+#experiences,
+#programmation
+ {
+    scroll-margin: 58px;
+}
+
+.mypropos {
+    margin-bottom: 10px;
+    top: 20px;
+    h2 {
+        font-size: 18px;
+    }
+}
+
+.presentation p {
+    padding: 2px;
+}
+
+}
+
