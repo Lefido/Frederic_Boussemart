@@ -263,6 +263,9 @@ nav {
 .presentation p {
   padding: 10px;
   transition: 0.4s;
+  /* line-height: 22px; */
+  /* letter-spacing: 1.2px; */
+  /* margin: -15px; */
 }
 
 .presentation p:hover {
@@ -294,7 +297,7 @@ nav {
 .moncv {
   width: 200px;
   background-color: black;
-  margin: 20px auto 10px;
+  margin: 0px auto 40px;
   text-align: center;
   padding: 10px;
   border-radius: 25px;
