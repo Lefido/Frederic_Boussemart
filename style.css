@@ -101,7 +101,7 @@ nav {
   width: 80;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .titre-page h1 {
@@ -199,10 +199,11 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 80%;
-  height: 30vh;
-  margin: 80px auto;
+  width: 90%;
+  /* height: 30vh; */
+  margin: 25px auto;
   text-shadow: 1px 1px 1px black;
+  /* border: 1px solid white; */
 }
 
 .image-t {
@@ -226,8 +227,22 @@ nav {
   margin-bottom: 0px;
 }
 
+.maphoto {
+  width: 15%;
+  /* border: 1px solid white; */
+  display: flex;
+  flex-wrap: wrap;
+  align-items:flex-start;
+  margin-top: 25px;
+}
+
+.maphoto p {
+  width: 100%;
+  text-align: center;
+}
+
 .maphoto img {
-  width: 200px;
+  width: 100%;
   border-radius: 25px;
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.623);
   transition: 0.4s;
@@ -238,10 +253,11 @@ nav {
 }
 
 .presentation {
-  width: 50%;
+  width: 65%;
   font-size: 20px;
   text-align: center;
   padding: 10px;
+  /* border: 1px solid white; */
 }
 
 .presentation p {
@@ -254,12 +270,15 @@ nav {
 }
 
 .contact {
-  min-width: 25%;
+  min-width: 15%;
   padding: 5px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  justify-content: flex-start;
+  justify-content:flex-start;
+  margin-top: 15px;
+  /* justify-content: center; */
+  /* border: 1px solid white; */
+
 }
 
 .contact-lg {
