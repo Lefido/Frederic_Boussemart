@@ -249,7 +249,7 @@ nav {
 }
 
 .maphoto img:hover {
-  transform: scale(1.2);
+  transform: scale(1.02);
 }
 
 .presentation {
@@ -269,7 +269,7 @@ nav {
 }
 
 .presentation p:hover {
-  transform: scale(1.08);
+  transform: scale(1.02);
 }
 
 .contact {
@@ -291,7 +291,7 @@ nav {
 }
 
 .contact-lg:hover {
-  transform: scale(1.08);
+  transform: scale(1.02);
 }
 
 .moncv {
